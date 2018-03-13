@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '12.3.0'
   spec.add_development_dependency 'rspec', '3.7.0'
   spec.add_development_dependency 'rubocop', '0.53.0'
+  spec.add_development_dependency 'simplecov', '0.15.1'
 
   spec.add_runtime_dependency 'dry-validation', '0.11.1'
   spec.add_runtime_dependency 'fear', '0.7.0'

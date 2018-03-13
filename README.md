@@ -1,5 +1,9 @@
 # Moist::Action
 
+[![Build Status](https://travis-ci.org/moist-rb/action.svg?branch=master)](https://travis-ci.org/moist-rb/action)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/368503b9d12c2c97e40f/test_coverage)](https://codeclimate.com/github/moist-rb/action/test_coverage)
+
+
 This module provides validation logic for controller actions. 
 You can use it to replace strong params in Rails and  and simplify testing. 
 

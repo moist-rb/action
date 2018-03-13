@@ -1,9 +1,23 @@
 sudo: false
 language: ruby
+cache: bundler
+env:
+  global:
+    CC_TEST_REPORTER_ID=eb346c7b9c0202598acc48a46db9a51a063e9ac71cb2d2ec1e0e9bba79b6ab38
+
 rvm:
   - 2.4.2
   - 2.5.0
-before_install: gem install bundler -v 1.16.1
+
+before_install:
+  - gem install bundler -v 1.16.1
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+
 script:
  - rubocop
  - bundle exec rspec
+
+after_script:
+  - ./cc-test-reporter format-coverage -t simplecov -o coverage/codeclimate.json coverage/.resultset.json
+  - if [[ "$TRAVIS_TEST_RESULT" == 0 ]]; then ./cc-test-reporter upload-coverage; fi  # Upload coverage/codeclimate.json
