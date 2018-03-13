@@ -15,7 +15,7 @@ before_install:
   - chmod +x ./cc-test-reporter
 
 script:
- - rubocop
+ - bundle exec rubocop
  - bundle exec rspec
 
 after_script:
