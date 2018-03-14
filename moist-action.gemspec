@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'Better controller actions'
   spec.description   = 'Better controller actions'
   spec.homepage      = 'https://github.com/moist-rb/action'
+  spec.license       = 'MIT'
 
   spec.files         = Dir['lib/**/*']
   spec.test_files    = Dir['spec/**/*']
