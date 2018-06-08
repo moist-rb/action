@@ -5,7 +5,7 @@
 [![Gem Version](https://badge.fury.io/rb/moist-action.svg)](https://badge.fury.io/rb/moist-action)
 
 This module provides validation logic for controller actions. 
-You can use it to replace strong params in Rails and  and simplify testing. 
+You can use it to replace strong params in Rails and simplify testing. 
 
 ## Installation
 
@@ -96,7 +96,7 @@ result.reduce(
 )
 ```
  
-Either monad has reach api, see [docs](http://www.rubydoc.info/github/bolshakov/fear/master/Fear/Either) for details.
+Either monad has rich api, see [docs](http://www.rubydoc.info/github/bolshakov/fear/master/Fear/Either) for details.
 
 ## Development
 
